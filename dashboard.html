@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Nexus PPM</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Cargar Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- NAVEGACIÓN LATERAL FIJA (SIDEBAR) -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="../assets/images/logo.png" alt="Nexus PPM Logo" class="logo-small">
+            <h2>Nexus PPM</h2>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="#" class="active"><i data-feather="home" class="nav-icon"></i> Dashboard</a></li>
+            <li><a href="#"><i data-feather="briefcase" class="nav-icon"></i> Proyectos</a></li>
+            <li><a href="#"><i data-feather="check-square" class="nav-icon"></i> Mis Tareas</a></li>
+            <li><a href="#"><i data-feather="clock" class="nav-icon"></i> Cargar Horas</a></li>
+            <li><a href="#"><i data-feather="bell" class="nav-icon"></i> Conciliación</a></li>
+            <li><a href="#"><i data-feather="bar-chart-2" class="nav-icon"></i> Reportes</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <ul class="sidebar-nav">
+                <li><a href="#"><i data-feather="settings" class="nav-icon"></i> Configuración</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="main-content">
+        <header class="header">
+            <h1>Dashboard</h1>
+            <div class="user-menu">
+                <span id="user-name">Cargando...</span>
+                <button id="logout-btn" title="Cerrar Sesión">
+                    <i data-feather="log-out"></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <h2>Mis Tareas Activas</h2>
+            <div id="tasks-container" class="tasks-grid">
+                <!-- Las tareas se cargarán aquí dinámicamente -->
+                <p>Cargando tareas...</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+      // Activar Feather Icons
+      feather.replace();
+    </script>
+    <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>
